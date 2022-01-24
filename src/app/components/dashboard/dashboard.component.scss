@@ -2,11 +2,20 @@
 *{
     font-family: 'Inter', sans-serif;
 }
-
+.positive{
+    color: hsl(163, 72%, 41%);
+    font-size:15px;
+    font-weight:700;
+}
+.negative{
+    color:hsl(356, 69%, 56%);
+    font-size:15px;
+    font-weight:700;
+}
 .principal-section{
     display: flex;
     justify-content:space-around;
-    padding:30px;
+    flex-wrap: wrap;
 }
 .card{
     background-color:hsl(227, 47%, 96%);
@@ -15,6 +24,7 @@
     text-align:center;
     border-radius:5px;
     line-height:20px;
+
     h3{
         font-size:12px;
     }
@@ -27,16 +37,7 @@
         letter-spacing:5px;
         margin-top:-20px;
     }
-    .positive{
-        color: hsl(163, 72%, 41%);
-        font-size:15px;
-        font-weight:700;
-    }
-    .negative{
-        color:hsl(356, 69%, 56%);
-        font-size:15px;
-        font-weight:700;
-    }
+
 }
 .principal-section .card:nth-child(1){
     border-top:5px solid hsl(208, 92%, 53%);
@@ -58,30 +59,46 @@
 }
 .secundary-section{
     margin-top:20px;
-    padding:30px;
     h2{
         font-size:20px
     }
     .sub-mini-cards-1{
         display: flex;
         justify-content:space-around;
+        flex-wrap: wrap;
     }
     .sub-mini-cards-2{
         display: flex;
         justify-content:space-around;
+        flex-wrap: wrap;
     }
 }
 .mini-card{
     background-color:hsl(227, 47%, 96%);
     width:220px;
-    height:180px;
+    height:120px;
     text-align:center;
     border-radius:5px;
-    line-height:20px;
-    margin-top:10px;
-    margin-bottom:10px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
     .sub-mini-card-1{
         display: flex;
         flex-direction: column;
+        p{
+          font-size:14px;
+        }
+    }
+    .sub-mini-card-2{
+      display: flex;
+      flex-direction: column;
+      .social-media-icon{
+        width:22px;
+        height:22px;
+      }
+    }
+    &:hover{
+      cursor:pointer;
+      background-color:grey;
     }
 }
